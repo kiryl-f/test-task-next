@@ -10,23 +10,12 @@ const involve = localfont (
     src: [
       {
         path: "../../public/fonts/TTF/Involve-Regular.ttf",
-        weight: "700"
+        weight: "400"
       }
     ],
     variable: "--font-involve"
   }
 )
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 
 
