@@ -13,30 +13,39 @@
   
   .popup {
     background: #fff;
-    width: 400px;
-    max-width: 90%;
-    padding: 20px;
-    border-radius: 8px;
+    width: 500px;
+    border-radius: 12px;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     text-align: center;
   
-    h2 {
-      margin-top: 0;
-      font-size: 20px;
-      color: #014d40;
-    }
+
+    .header {
+    
+      h2 {
+        padding-top: 2rem;
+        color: #063536;
+        margin: 0;
+        font-size: 32px;
+        font-weight: bold;
+      }
   
-    p {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 20px;
+      p {
+        color: #063536;
+        font-size: 16px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.6rem;
+        margin-top: 10px;
+      }
     }
   
     form {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
+      padding: 1.2rem;
+      margin-top: 20px;
   
       label {
         font-size: 14px;
@@ -46,15 +55,16 @@
       input[type="tel"],
       textarea {
         width: 100%;
-        padding: 10px;
+        padding: 12px;
         font-size: 14px;
         border: 1px solid #ddd;
-        border-radius: 4px;
+        border-radius: 8px;
         outline: none;
       }
   
       textarea {
         resize: none;
+        height: 100px;
       }
   
       .checkboxWrapper {
@@ -71,9 +81,9 @@
       .submitButton {
         background: #f26726;
         color: #fff;
-        padding: 10px;
+        padding: 12px;
         border: none;
-        border-radius: 4px;
+        border-radius: 8px;
         font-size: 16px;
         cursor: pointer;
         transition: background 0.3s;
@@ -87,8 +97,8 @@
   
   .closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     background: none;
     border: none;
     font-size: 24px;

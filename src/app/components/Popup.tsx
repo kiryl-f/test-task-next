@@ -15,8 +15,11 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose }) => {
         <button className={styles.closeButton} onClick={onClose}>
           ×
         </button>
-        <h2>Обратный звонок</h2>
-        <p>Заполните форму ниже, и наш специалист свяжется с вами в ближайшее время.</p>
+        <div className={styles.header}>
+          <img src="/popup_bg_desktop.png" style={{width: '100%'}}/>
+          <h2>Обратный звонок</h2>
+          <p>Заполните форму ниже, и наш специалист свяжется с вами в ближайшее время.</p>
+        </div>
         <form>
           <label htmlFor="phone">Телефон*</label>
           <input type="tel" id="phone" placeholder="+375 (99) 999-99-99" required />

@@ -9,8 +9,6 @@ import { Feature } from 'ol';
 import Point from 'ol/geom/Point';
 import VectorSource from 'ol/source/Vector';
 import VectorLayer from 'ol/layer/Vector';
-import Icon from 'ol/style/Icon';
-import Style from 'ol/style/Style';
 
 interface MapProps {
   latitude: number;
@@ -36,7 +34,6 @@ const MapComponent: React.FC<MapProps> = ({ latitude, longitude }) => {
       }),
     });
 
-    // Add a marker to the map
     const marker = new Feature({
       geometry: new Point(fromLonLat([longitude, latitude])),
     });
@@ -52,7 +49,6 @@ const MapComponent: React.FC<MapProps> = ({ latitude, longitude }) => {
     map.addLayer(markerLayer);
 
   
-    // Clean up map on unmount
     return () => {
       map.setTarget(undefined);
     };
