@@ -1,0 +1,24 @@
+.headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  
+    .textWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  
+    .textPrimary {
+      font-size: 18px;
+      font-weight: bold;
+      color: #014d40;
+    }
+  
+    .textSecondary {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+  
