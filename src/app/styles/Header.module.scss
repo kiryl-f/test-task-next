@@ -14,9 +14,6 @@
     justify-content: space-between;
     width: 100%;
 
-    .logo img {
-      max-height: 50px;
-    }
 
     .contactInfo {
       display: flex;
@@ -62,7 +59,6 @@
     }
   }
 
-  /* Mobile Header */
   .mobileHeader {
     display: none;
     align-items: center;

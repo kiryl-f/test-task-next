@@ -12,10 +12,9 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        {/* Desktop Version */}
         <div className={styles.desktopHeader}>
           <div className={styles.logo}>
-            <img src="/logo.png" alt="Logo" />
+            <Image src="/logo.png" alt="Logo" width={260} height={64}/>
           </div>
           <div className={styles.contactInfo}>
             <div className={styles.address}>
@@ -31,7 +30,6 @@ const Header: React.FC = () => {
           <button className={styles.callButton} onClick={handleOpenPopup}>Заказать звонок</button>
         </div>
 
-        {/* Mobile Version */}
         <div className={styles.mobileHeader}>
           <div className={styles.logo}>
             <Image src="/logo.png" alt="Logo" width={150} height={50} />
