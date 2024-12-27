@@ -18,9 +18,8 @@
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    margin: 1rem 0;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 
     img {
       width: 100%;
@@ -90,7 +89,6 @@
   .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
 
     .dot {
       height: 12px;

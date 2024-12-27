@@ -11,7 +11,7 @@
 
   .imageWrapper {
     flex: 1;
-    max-width: 50%; /* Ensure image and form are side by side initially */
+    max-width: 50%;
     
     .image {
       width: 85%;
@@ -90,17 +90,16 @@
   }
 }
 
-/* Mobile and Tablet Responsiveness */
 
 @media (max-width: 1024px) {
   .formSection {
-    padding: 4rem; /* Reduce padding for tablet screens */
+    padding: 4rem;
   }
 
   .imageWrapper {
     display: none;
-    max-width: 100%; /* Image takes full width on tablet */
-    margin-bottom: 2rem; /* Add margin below image */
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
 
   .formWrapper {
@@ -109,60 +108,60 @@
   }
 
   .formWrapper h2 {
-    font-size: 22px; /* Adjust heading size */
+    font-size: 22px;
   }
 
   .formWrapper p {
-    font-size: 14px; /* Adjust paragraph font size */
+    font-size: 14px; 
   }
 
   .submitButton {
-    font-size: 14px; /* Slightly smaller button for tablet */
+    font-size: 14px;
     padding: 8px 16px;
   }
 }
 
 @media (max-width: 768px) {
   .formSection {
-    padding: 1.5rem; /* Reduce padding for mobile devices */
-    flex-direction: column; /* Stack the form and image vertically */
-    align-items: center; /* Center the content */
+    padding: 1.5rem; 
+    flex-direction: column;
+    align-items: center; 
   }
 
   .imageWrapper {
-    max-width: 100%; /* Image takes full width on mobile */
-    margin-bottom: 1rem; /* Adjust margin */
+    max-width: 100%;
+    margin-bottom: 1rem; 
   }
 
   .formWrapper {
-    width: 100%; /* Ensure form section takes full width */
-    padding: 0; /* Remove extra padding */
+    width: 100%;
+    padding: 0; 
   }
 
   .formWrapper h2 {
-    font-size: 20px; /* Adjust heading size for mobile */
+    font-size: 20px; 
   }
 
   .formWrapper p {
-    font-size: 14px; /* Adjust paragraph font size */
+    font-size: 14px;
   }
 
   .formWrapper label {
-    font-size: 12px; /* Adjust label size for mobile */
+    font-size: 12px;
   }
 
   .formWrapper input[type="tel"],
   .formWrapper textarea {
-    font-size: 12px; /* Smaller font size for inputs */
-    padding: 8px; /* Adjust padding for inputs */
+    font-size: 12px;
+    padding: 8px;
   }
 
   .checkboxWrapper label {
-    font-size: 10px; /* Smaller checkbox label font size */
+    font-size: 10px;
   }
 
   .submitButton {
-    font-size: 14px; /* Adjust button font size for mobile */
+    font-size: 14px;
     padding: 10px 20px;
   }
 }
