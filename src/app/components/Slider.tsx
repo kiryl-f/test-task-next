@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import CardGrid from "./CardGrid"; // Adjust path as needed
 import styles from "../styles/Slider.module.scss";
 import Popup from "./Popup";
+import MobileCarousel from "./MobileCarousel";
 
 const slides = [
   {
@@ -51,6 +52,8 @@ const Slider: React.FC = () => {
     );
   };
 
+ 
+
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
@@ -91,9 +94,11 @@ const Slider: React.FC = () => {
         </div>
       </div>
 
+      
+
       <div className={styles.cardGridSection}>
         <CardGrid />
-      </div>
+      </div> 
 
       <Popup isOpen={isPopupOpen} onClose={closePopup} />
     </section>

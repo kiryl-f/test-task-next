@@ -1,4 +1,3 @@
-// components/Map.tsx
 import React, { useRef, useEffect } from 'react';
 import Map from 'ol/Map';
 import View from 'ol/View';
@@ -9,6 +8,7 @@ import { Feature } from 'ol';
 import Point from 'ol/geom/Point';
 import VectorSource from 'ol/source/Vector';
 import VectorLayer from 'ol/layer/Vector';
+import styles from '../styles/Map.module.scss';  
 
 interface MapProps {
   latitude: number;
@@ -48,13 +48,12 @@ const MapComponent: React.FC<MapProps> = ({ latitude, longitude }) => {
 
     map.addLayer(markerLayer);
 
-  
     return () => {
       map.setTarget(undefined);
     };
   }, [latitude, longitude]);
 
-  return <div ref={mapRef} style={{ height: '400px', width: '100%', paddingLeft: '7rem', paddingRight: '7rem', paddingTop: '5rem'}} />;
+  return <div ref={mapRef} className={styles['map-container']} />;
 };
 
 export default MapComponent;

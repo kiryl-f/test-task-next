@@ -1,0 +1,21 @@
+.homeBackground {
+    background-image: url("/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    
+    @media (max-width: 1200px) {
+      background-size: cover;
+      background-position: top;
+    }
+  
+    @media (max-width: 1024px) {
+      background-image: url("/bg_small.png"); 
+      background-size: cover;
+      background-position: center center;
+      max-height: 1000px;
+    }
+  
+  }
+  

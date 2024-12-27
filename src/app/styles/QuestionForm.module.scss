@@ -1,92 +1,168 @@
 .formSection {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: #fff;
-  
-    .imageWrapper {
-      flex: 1;
-      max-width: 50%;
-      
-      .image {
-        width: 85%;
-        height: 50%;
-        border-radius: 4px;
-        object-fit: cover;
-      }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fff;
+
+  .imageWrapper {
+    flex: 1;
+    max-width: 50%; /* Ensure image and form are side by side initially */
+    
+    .image {
+      width: 85%;
+      height: 50%;
+      border-radius: 4px;
+      object-fit: cover;
     }
-  
-    .formWrapper {
-      flex: 1;
-  
-      h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #014d40;
+  }
+
+  .formWrapper {
+    flex: 1;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #014d40;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      label {
+        font-size: 14px;
+        color: #333;
       }
-  
-      p {
-        font-size: 16px;
-        color: #666;
-        margin-bottom: 20px;
+
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        outline: none;
       }
-  
-      form {
+
+      textarea {
+        resize: none;
+      }
+
+      .checkboxWrapper {
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
-  
+        align-items: center;
+        gap: 10px;
+
         label {
-          font-size: 14px;
-          color: #333;
+          font-size: 12px;
+          color: #666;
         }
-  
-        input[type="tel"],
-        textarea {
-          width: 100%;
-          padding: 10px;
-          font-size: 14px;
-          border: 1px solid #ddd;
-          border-radius: 4px;
-          outline: none;
-        }
-  
-        textarea {
-          resize: none;
-        }
-  
-        .checkboxWrapper {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-  
-          label {
-            font-size: 12px;
-            color: #666;
-          }
-        }
-  
-        .submitButton {
-          background: #f26726;
-          color: #fff;
-          padding: 10px;
-          border: none;
-          font-weight: 700;
-          border-radius: 4px;
-          font-size: 16px;
-          cursor: pointer;
-          transition: background 0.3s;
-  
-          &:hover {
-            background: #d2551e;
-          }
+      }
+
+      .submitButton {
+        background: #f26726;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        font-weight: 700;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background: #d2551e;
         }
       }
     }
   }
-  
+}
+
+/* Mobile and Tablet Responsiveness */
+
+@media (max-width: 1024px) {
+  .formSection {
+    padding: 4rem; /* Reduce padding for tablet screens */
+  }
+
+  .imageWrapper {
+    display: none;
+    max-width: 100%; /* Image takes full width on tablet */
+    margin-bottom: 2rem; /* Add margin below image */
+  }
+
+  .formWrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .formWrapper h2 {
+    font-size: 22px; /* Adjust heading size */
+  }
+
+  .formWrapper p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+
+  .submitButton {
+    font-size: 14px; /* Slightly smaller button for tablet */
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formSection {
+    padding: 1.5rem; /* Reduce padding for mobile devices */
+    flex-direction: column; /* Stack the form and image vertically */
+    align-items: center; /* Center the content */
+  }
+
+  .imageWrapper {
+    max-width: 100%; /* Image takes full width on mobile */
+    margin-bottom: 1rem; /* Adjust margin */
+  }
+
+  .formWrapper {
+    width: 100%; /* Ensure form section takes full width */
+    padding: 0; /* Remove extra padding */
+  }
+
+  .formWrapper h2 {
+    font-size: 20px; /* Adjust heading size for mobile */
+  }
+
+  .formWrapper p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+
+  .formWrapper label {
+    font-size: 12px; /* Adjust label size for mobile */
+  }
+
+  .formWrapper input[type="tel"],
+  .formWrapper textarea {
+    font-size: 12px; /* Smaller font size for inputs */
+    padding: 8px; /* Adjust padding for inputs */
+  }
+
+  .checkboxWrapper label {
+    font-size: 10px; /* Smaller checkbox label font size */
+  }
+
+  .submitButton {
+    font-size: 14px; /* Adjust button font size for mobile */
+    padding: 10px 20px;
+  }
+}

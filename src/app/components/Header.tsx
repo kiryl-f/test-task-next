@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/Header.module.scss';
 import Popup from './Popup';
 import Image from 'next/image';
+import { PhoneIcon } from './PhoneIcon';
 
 const Header: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -35,7 +36,7 @@ const Header: React.FC = () => {
             <Image src="/logo.png" alt="Logo" width={150} height={50} />
           </div>
           <div className={styles.phoneIcon} onClick={handleOpenPopup}>
-            <Image src="/phone-icon.png" alt="Phone Icon" width={30} height={30} />
+            <PhoneIcon/>
           </div>
         </div>
       </div>
