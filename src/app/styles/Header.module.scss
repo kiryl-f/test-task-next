@@ -1,0 +1,61 @@
+.header {
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+
+  
+    .contactInfo {
+      display: flex;
+      gap: 50px;
+
+      .address, .phone {
+        font-size: 12px;
+
+        strong {
+          display: block;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        p {
+          line-height: 1.4;
+        }
+      }
+
+      .phone {
+        text-align: right;
+
+        strong {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .callButton {
+      border: 1px solid orange;
+      background: transparent;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+
+      &:hover {
+        background: orange;
+        color: black;
+      }
+    }
+  }
+}

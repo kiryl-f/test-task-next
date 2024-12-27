@@ -1,0 +1,88 @@
+.formSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+  
+    .imageWrapper {
+      flex: 1;
+      max-width: 50%;
+      
+      .image {
+        width: 60%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+  
+    .formWrapper {
+      flex: 1;
+      max-width: 50%;
+  
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #014d40;
+      }
+  
+      p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        label {
+          font-size: 14px;
+          color: #333;
+        }
+  
+        input[type="tel"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 14px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          outline: none;
+        }
+  
+        textarea {
+          resize: none;
+        }
+  
+        .checkboxWrapper {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+  
+          label {
+            font-size: 12px;
+            color: #666;
+          }
+        }
+  
+        .submitButton {
+          background: #f26726;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background 0.3s;
+  
+          &:hover {
+            background: #d2551e;
+          }
+        }
+      }
+    }
+  }
+  
