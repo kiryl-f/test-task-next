@@ -4,13 +4,12 @@
   justify-content: center;
   background: url("/background.jpg") no-repeat center center;
   background-size: cover;
-  padding: 50px 20px;
-  overflow: hidden; /* Prevents text/content from overflowing */
+  padding: 3rem 10rem;
+  overflow: hidden; 
 
   .sliderContainer {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Set a maximum width */
     overflow: hidden;
     color: white;
 
@@ -28,11 +27,11 @@
       padding-right: 2rem;
 
       h2 {
-        font-size: 2rem; /* Responsive font size */
+        font-size: 3rem; 
         margin-bottom: 20px;
         word-wrap: break-word;
         word-break: break-word;
-        white-space: normal; /* Allow wrapping */
+        white-space: normal;
        
       }
 
@@ -45,7 +44,7 @@
       }
 
       .ctaButton {
-        background: orange;
+        background: #E97550;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -54,7 +53,7 @@
         transition: background 0.3s;
 
         &:hover {
-          background: darkorange;
+          background: #E97550;
         }
       }
     }
@@ -70,6 +69,8 @@
       padding: 10px;
       cursor: pointer;
       font-size: 20px;
+      margin-right: 3rem;
+
 
       &:hover {
         background: rgba(0, 0, 0, 0.7);
@@ -98,7 +99,7 @@
         cursor: pointer;
 
         &.activeDot {
-          background-color: orange;
+          background-color: #E97550;
         }
       }
     }

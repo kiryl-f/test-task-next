@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import localfont from "next/font/local";
@@ -17,6 +16,18 @@ const involve = localfont (
   }
 )
 
+const involveBold = localfont (
+  {
+    src: [
+      {
+        path: "../../public/fonts/TTF/Involve-Bold.ttf",
+        weight: "700"
+      }
+    ],
+    variable: "--font-involve-bold"
+  }
+)
+
 
 
 export const metadata: Metadata = {
@@ -31,8 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     
-      <body className={`${involve.variable}`}>
+      <body className={`${involve.variable} ${involveBold.variable}`}>
         {children}
       </body>
     </html>

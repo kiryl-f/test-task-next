@@ -4,6 +4,7 @@
   width: 100%;
   padding: 2rem 6rem;
 
+  margin-bottom: 2rem;
   .container {
     width: 100%;
   }
@@ -44,7 +45,7 @@
     }
 
     .callButton {
-      border: 1px solid orange;
+      border: 1px solid #E97550;
       background: transparent;
       color: white;
       padding: 10px 20px;
@@ -53,7 +54,7 @@
       transition: background 0.3s, color 0.3s;
 
       &:hover {
-        background: orange;
+        background: #E97550;
         color: black;
       }
     }
@@ -79,7 +80,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .desktopHeader {
       display: none;
     }

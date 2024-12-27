@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import CardGrid from "./CardGrid"; // Adjust path as needed
 import styles from "../styles/Slider.module.scss";
+import Popup from "./Popup";
 
 const slides = [
   {
@@ -22,7 +23,16 @@ const slides = [
 const Slider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-slide every 3 seconds
+  const [isPopupOpen, setIsPopupOpen] = useState(false); 
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -48,7 +58,6 @@ const Slider: React.FC = () => {
   return (
     <section className={styles.sliderSection}>
       <div className={styles.sliderContainer}>
-        {/* Slides */}
         <div
           className={styles.slidesWrapper}
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -57,7 +66,7 @@ const Slider: React.FC = () => {
             <div key={index} className={styles.slide}>
               <h2>{slide.title}</h2>
               <p>{slide.subtitle}</p>
-              <button className={styles.ctaButton}>Узнать стоимость</button>
+              <button className={styles.ctaButton} onClick={openPopup}>Узнать стоимость</button>
             </div>
           ))}
         </div>
@@ -85,6 +94,8 @@ const Slider: React.FC = () => {
       <div className={styles.cardGridSection}>
         <CardGrid />
       </div>
+
+      <Popup isOpen={isPopupOpen} onClose={closePopup} />
     </section>
   );
 };
