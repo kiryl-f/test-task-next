@@ -1,9 +1,12 @@
 .formSection {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     align-items: center;
-    padding: 40px;
+    justify-content: flex-start;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background-color: #fff;
   
     .imageWrapper {
@@ -11,15 +14,15 @@
       max-width: 50%;
       
       .image {
-        width: 60%;
-        border-radius: 8px;
+        width: 85%;
+        height: 50%;
+        border-radius: 4px;
         object-fit: cover;
       }
     }
   
     .formWrapper {
       flex: 1;
-      max-width: 50%;
   
       h2 {
         font-size: 24px;
@@ -36,7 +39,7 @@
       form {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 2rem;
   
         label {
           font-size: 14px;
@@ -73,6 +76,7 @@
           color: #fff;
           padding: 10px;
           border: none;
+          font-weight: 700;
           border-radius: 4px;
           font-size: 16px;
           cursor: pointer;

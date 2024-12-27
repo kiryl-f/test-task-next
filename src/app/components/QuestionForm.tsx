@@ -6,7 +6,7 @@ const QuestionForm: React.FC = () => {
     <section className={styles.formSection}>
       <div className={styles.imageWrapper}>
         <img
-          src="/popup_bg_desktop.png"
+          src="/question_form.jpeg"
           alt="Modern interior"
           className={styles.image}
         />

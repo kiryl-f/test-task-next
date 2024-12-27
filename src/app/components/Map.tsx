@@ -54,7 +54,7 @@ const MapComponent: React.FC<MapProps> = ({ latitude, longitude }) => {
     };
   }, [latitude, longitude]);
 
-  return <div ref={mapRef} style={{ height: '400px', width: '100%' }} />;
+  return <div ref={mapRef} style={{ height: '400px', width: '100%', paddingLeft: '7rem', paddingRight: '7rem', paddingTop: '5rem'}} />;
 };
 
 export default MapComponent;
