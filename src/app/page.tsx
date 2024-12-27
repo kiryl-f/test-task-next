@@ -9,6 +9,7 @@ import MapComponent from "./components/Map";
 import styles from './styles/Home.module.scss';
 import { useEffect, useState } from "react";
 import MobileCarousel from "./components/MobileCarousel";
+import MobileInfo from "./components/MobileInfo";
 
 const Slider = dynamic(() => import('./components/Slider'), { ssr: false });
 
@@ -18,7 +19,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 900);
+      setIsMobile(window.innerWidth <= 1024);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -29,6 +30,7 @@ export default function Home() {
     <div style={{display: 'flex', flexDirection: 'column'}}>
      <div className={styles.homeBackground}> 
         <Header />
+        {isMobile ? <MobileInfo/> : <></>}
         {isMobile ? <MobileCarousel/> :  <Slider />}
       </div>
       <MapComponent latitude={53.9006} longitude={27.5590} />

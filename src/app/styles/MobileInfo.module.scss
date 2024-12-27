@@ -1,0 +1,44 @@
+.mobileInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+  
+    .title {
+      text-align: start;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+  
+    .subtitle {
+      text-align: start;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
+  
+    .ctaButton {
+      background-color: #f26726;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #d2551e;
+      }
+    }
+  }
+  
