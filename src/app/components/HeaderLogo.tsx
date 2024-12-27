@@ -1,5 +1,5 @@
 
-import styles from './HeaderLogo.module.scss';
+import styles from '../styles/HeaderLogo.module.scss';
 import { HouseIcon } from './HouseIcon';
 
 const HeaderLogo = () => {

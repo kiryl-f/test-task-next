@@ -3,6 +3,7 @@ import styles from '../styles/Header.module.scss';
 import Popup from './Popup';
 import Image from 'next/image';
 import { PhoneIcon } from './PhoneIcon';
+import HeaderLogo from './HeaderLogo'; // Import the HeaderLogo component
 
 const Header: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -15,7 +16,8 @@ const Header: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.desktopHeader}>
           <div className={styles.logo}>
-            <Image src="/logo.png" alt="Logo" width={260} height={64}/>
+            {/* Replace the Image logo with the HeaderLogo component */}
+            <HeaderLogo />
           </div>
           <div className={styles.contactInfo}>
             <div className={styles.address}>
@@ -33,10 +35,11 @@ const Header: React.FC = () => {
 
         <div className={styles.mobileHeader}>
           <div className={styles.logo}>
-            <Image src="/logo.png" alt="Logo" width={150} height={50} />
+            {/* You can use the HeaderLogo for mobile too if needed */}
+            <HeaderLogo />
           </div>
           <div className={styles.phoneIcon} onClick={handleOpenPopup}>
-            <PhoneIcon/>
+            <PhoneIcon />
           </div>
         </div>
       </div>

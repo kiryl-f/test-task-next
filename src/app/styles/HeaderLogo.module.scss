@@ -1,24 +1,37 @@
 .headerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  .textWrapper {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-  
-    .textWrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .textPrimary {
+    font-size: 14px;
+    font-weight: bold;
+
+    @media (max-width: 1024px) {
+      font-size: 14px; 
     }
-  
-    .textPrimary {
-      font-size: 18px;
-      font-weight: bold;
-      color: #014d40;
-    }
-  
-    .textSecondary {
-      font-size: 14px;
-      color: #666;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
     }
   }
-  
+
+  .textSecondary {
+    font-size: 12px;
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 10px; 
+    }
+  }
+}
