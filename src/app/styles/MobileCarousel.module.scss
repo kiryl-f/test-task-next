@@ -5,13 +5,11 @@
   position: relative;
   width: 100%;
   background-color: transparent;
-  padding: 2rem 1rem;
   color: white;
   overflow: hidden;
 
   .carouselItem {
-    width: 100%;
-    max-width: 100%;
+    width: 75%;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -25,13 +23,13 @@
     background-image: none;
     background-size: cover;
     background-position: center;
-    
+
     &.noImage {
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
       padding: 1rem;
-
+      
       .cardContent {
         position: static;
         color: #fff;
@@ -39,6 +37,7 @@
         background: transparent;
         width: 100%;
         text-align: left;
+        align-self: flex-start;
       }
     }
 
@@ -50,15 +49,16 @@
 
     .cardContent {
       position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 10px;
+      left: 10px;
       color: #fff;
       padding: 10px;
       background: transparent;
       border-radius: 8px;
-      width: 80%;
-      text-align: center;
+      width: auto;
+      text-align: left;
+      max-width: 90%;
+      box-sizing: border-box;
     }
 
     h3 {
