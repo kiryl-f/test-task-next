@@ -7,7 +7,6 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.desktopFooter}>
-        {/* Added HeaderLogo here */}
         <div className={styles.footerLogoWrapper}>
           <HeaderLogo />
         </div>
@@ -33,7 +32,10 @@ const Footer: React.FC = () => {
       </div>
 
       <div className={styles.mobileFooter}>
-        <HeaderLogo/>
+      <div className={styles.footerLogoWrapper}>
+          <HeaderLogo />
+        </div>
+        <div className='divider'></div>
         <div className={styles.address}>
           <h3>Адрес офиса</h3>
           <p>РБ, г. Минск, ул. Ленина, 1</p>

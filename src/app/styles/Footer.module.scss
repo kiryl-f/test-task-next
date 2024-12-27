@@ -48,13 +48,6 @@
     text-align: center;
     padding: 1rem;
 
-    .logo {
-      margin-bottom: 1rem;
-
-      img {
-        max-height: 50px;
-      }
-    }
 
     .address {
       margin-bottom: 1rem;
@@ -101,6 +94,11 @@
 
     .mobileFooter {
       display: flex;
+
+      .footerLogoWrapper {
+        margin-bottom: 2rem;
+      }
     }
+
   }
 }
