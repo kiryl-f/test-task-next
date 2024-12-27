@@ -1,17 +1,23 @@
 import React from 'react';
 import styles from '../styles/Footer.module.scss';
 import Image from 'next/image';
+import HeaderLogo from './HeaderLogo'; // Import HeaderLogo
 
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.desktopFooter}>
-        <Image src={'/logo.png'} alt="Company Logo" width={260} height={64} style={{ alignSelf: 'center' }} />
+        {/* Added HeaderLogo here */}
+        <div className={styles.footerLogoWrapper}>
+          <HeaderLogo />
+        </div>
+
         <div className={styles.address}>
           <h3>Адрес офиса</h3>
           <p>РБ, г. Минск, <br /> ул. Ленина, 1</p>
           <p>пн-пт: с 09:00 до 18:00<br />сб-вс: с 10:00 до 16:00</p>
         </div>
+
         <div className={styles.companyInfo}>
           <h3>ООО "Строительные решения"</h3>
           <p>Юридический адрес:<br />РБ г. Минск, ул. Ленина, 1<br />УНП: 111111111</p>
@@ -27,9 +33,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className={styles.mobileFooter}>
-        <div className={styles.logo}>
-          <Image src={'/logo.png'} alt="Company Logo" width={100} height={32} />
-        </div>
+        <HeaderLogo/>
         <div className={styles.address}>
           <h3>Адрес офиса</h3>
           <p>РБ, г. Минск, ул. Ленина, 1</p>

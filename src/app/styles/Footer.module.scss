@@ -9,6 +9,13 @@
     justify-content: space-between;
     align-items: center;
 
+    .footerLogoWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+
     .address,
     .companyInfo {
       h3 {
@@ -85,7 +92,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 900px) {
     padding: 1rem 2rem;
 
     .desktopFooter {
