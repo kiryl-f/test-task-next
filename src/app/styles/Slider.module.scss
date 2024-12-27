@@ -4,9 +4,12 @@
   justify-content: center;
   background: url("/background.jpg") no-repeat center center;
   background-size: cover;
-  padding: 3rem 10rem;
+  padding: 3rem 8rem;
   overflow: hidden; 
 
+  @media (max-width: 1300px) {
+    padding: 2.5rem 3rem;
+  }
   .sliderContainer {
     position: relative;
     width: 100%;
